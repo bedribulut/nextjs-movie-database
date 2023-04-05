@@ -8,12 +8,12 @@ import Movie from '../components/Movie';
 
 export default function Home() {
 
-const fetcher = (...args) => fetch(...args).then((res) => res.json())
-const { data, error } = useSWR(`https://api.themoviedb.org/3/movie/popular?api_key=eb89474ed3551141c9241176893f33ab&language=en-US&page=1`, fetcher)
-if (error) return <div>Failed to load</div>
-if (!data) return <div>Loading...</div>
+  const fetcher = (...args) => fetch(...args).then((res) => res.json())
+  const { data, error } = useSWR(`https://api.themoviedb.org/3/movie/popular?api_key=eb89474ed3551141c9241176893f33ab&language=en-US&page=1`, fetcher)
+  if (error) return <div>Failed to load</div>
+  if (!data) return <div>Loading...</div>
 
-console.log(data);
+  console.log(data);
 
   return (
     <>
