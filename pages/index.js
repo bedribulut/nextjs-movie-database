@@ -24,9 +24,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <h1 className=''>hello nextjs</h1>
-        <Link href="/about/about">LINK TO ABOUT</Link>
-        <div className='grid gap-16 grid-cols-fluid'>
+        <div className='grid gap-12 grid-cols-fluid'>
           {data.results.map((movie) => (
             <Movie
               key={movie.id}

@@ -6,9 +6,9 @@ function Movie({title, id, poster_path, release_date }) {
 
   return (
     <div>
-        <h1>{title}</h1>
-        <h2>{release_date}</h2>
-        <Link href={`/${id}`}>
+        <h1 className="text-center">{title}</h1>
+        <h2 className="text-center mb-3">{release_date}</h2>
+        <Link href={`/`}>
             <Image
                 src={imagePath + poster_path}
                 alt={title}

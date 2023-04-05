@@ -9,7 +9,7 @@ const montserrat = Montserrat({
 export default function Layout({ children }) {
   return (
     <>
-      <main className={`${montserrat.className} mx-32 my-12`}>{children}</main>
+      <main className={`${montserrat.className} mx-12 my-12`}>{children}</main>
     </>
   )
 }
